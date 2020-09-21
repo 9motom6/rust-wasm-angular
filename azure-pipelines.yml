@@ -16,7 +16,7 @@ steps:
       curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
       wasm-pack build
     workingDirectory: '$(Build.SourcesDirectory)\wasm'  
-  displayName: 'Install Node.js'
+  displayName: 'Install wasm-pack and build Rust'
 
 - task: CmdLine@2
   inputs:
@@ -30,7 +30,7 @@ steps:
 
 - task: AzureFileCopy@4
   inputs:
-    SourcePath: '$(Build.SourcesDirectory)\dist\*'
+    SourcePath: '$(Build.SourcesDirectory)\dist\rust-wasm-angular\*'
     azureSubscription: 'Azure subscription 1(e1d33e78-07f6-4df4-b39d-979bad805079)'
     Destination: 'AzureBlob'
     storage: 'rustwasmangular'
