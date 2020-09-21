@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rust-wasm-angular"
+    }
+  },
+  "defaultProject": "rust-wasm-angular",
+  "cli": {
+    "analytics": "921c706b-52e0-4209-a5a2-5cb88663294e"
+  }
 }
