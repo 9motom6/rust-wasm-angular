@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/9motom6/rust-wasm-angular/_apis/build/status/9motom6.rust-wasm-angular?branchName=master)](https://dev.azure.com/9motom6/rust-wasm-angular/_build/latest?definitionId=2&branchName=master)
+
 This is a simple Hello world Angular application with Rust WASM.
 
 To run the app:
